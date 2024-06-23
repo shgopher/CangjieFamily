@@ -2,7 +2,7 @@
  * @Author: shgopher shgopher@gmail.com
  * @Date: 2024-06-22 13:20:08
  * @LastEditors: shgopher shgopher@gmail.com
- * @LastEditTime: 2024-06-23 15:57:47
+ * @LastEditTime: 2024-06-23 17:58:50
  * @FilePath: /CangjieFamily/README.md
  * @Description: 
  * 
@@ -31,7 +31,8 @@ hey~，我是科科人神，目前就职于国内一家互联网公司，你们�
 
 华为仓颉语言的全面介绍
 ## 基础
-- 基础类型
+- [helloworld](./基础/helloworld/README.md))
+- [基础类型](./基础/基础类型/README.md)
 ## 并发
 ## runtime
 ## 编译原理
