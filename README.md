@@ -2,7 +2,7 @@
  * @Author: shgopher shgopher@gmail.com
  * @Date: 2024-06-22 13:20:08
  * @LastEditors: shgopher shgopher@gmail.com
- * @LastEditTime: 2024-06-22 13:29:51
+ * @LastEditTime: 2024-06-23 15:57:47
  * @FilePath: /CangjieFamily/README.md
  * @Description: 
  * 
@@ -31,9 +31,12 @@ hey~，我是科科人神，目前就职于国内一家互联网公司，你们�
 
 华为仓颉语言的全面介绍
 ## 基础
+- 基础类型
 ## 并发
 ## runtime
 ## 编译原理
 ## 工程实践
 ## 通过例子学 cangjie
 - [learn cangjie by example](https://github.com/shgopher/learn-cangjie-by-example)
+## 仓颉官方语言规范
+- [仓颉官方语言规范](./cjbook.pdf)
