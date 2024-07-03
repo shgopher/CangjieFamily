@@ -2,7 +2,7 @@
  * @Author: shgopher shgopher@gmail.com
  * @Date: 2024-06-23 17:58:58
  * @LastEditors: shgopher shgopher@gmail.com
- * @LastEditTime: 2024-06-24 01:00:50
+ * @LastEditTime: 2024-07-03 17:01:30
  * @FilePath: /CangjieFamily/基础/基础类型/README.md
  * @Description: 
  * 
@@ -104,7 +104,50 @@ let p6 = 2.0 ** 3.0 ** 2.0    // p6 = 512.0
 - 多行字符串 let s1: String = """  """
 - 多行原始字符串 let s2: String = #""#
 ## 元组类型
-## 数组类型
+元组类型，cj的多返回值就是以元组的形式返回的，这一点跟go不同，go是原生支持返回多返回值的
+```cj
+main() {
+  var tuple =(12,"hi")
+  println(tuple[1])
+
+  // 这是完整写法
+  var x :(Int64,String) = (12,"hi")
+}
+
+```
+
+让我们看一下函数的多返回值是怎么利用元组的
+
+```cj
+func get():(String,Int64){
+  return ("hi",12)
+}
+
+func get1():(name: String,year Int64){
+  return ("hi",12)
+}
+```
+## 字符数组类型
+var a = b"hello\n"
+
+它其实相当于 var a:Array<Uint8> = [104,101,108,108,111,10]
+## 值类型数组
+var a: VArray<Int64, $3> = [1, 2, 3]
+
+通过 $ 加上一个数值字面量表示这个值类型数组的长度
 ## 区间类型
+- 左闭右开 let r1 = 0..10 : 1 
+- 左闭右闭 let r9 = 10..=0 : 1
+
+基础语法就是 数字..数字:步长 和 数字..=数字:步长
+
+但是注意，step 的值不能等于 0 ,可以不写 step，此时 step 默认等于 1
 ## Unit 类型
+对于那些只关心副作用而不关心值的表达式，它们的类型是 Unit。例如，print 函数、赋值表达式、复合赋值表达式、自增和自减表达式、循环表达式，它们的类型都是 Unit。
+
+Unit 类型只有一个值，也是它的字面量：()。除了赋值、判等和判不等外，Unit 类型不支持其他操作
 ## Nothing 类型
+
+Nothing 是一种特殊的类型，它不包含任何值，并且 Nothing 类型是所有类型的子类型。
+
+目前编译器不允许用户自定义nothing类型的变量
