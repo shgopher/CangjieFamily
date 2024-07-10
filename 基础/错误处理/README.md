@@ -10,7 +10,7 @@
 -->
 # 错误处理
 
-- Error  如果出现内部错误，只能通知给用户，尽量安全终止程序。
+- Error 如果出现内部错误，只能通知给用户，尽量安全终止程序。
 - Exception 描述的是程序运行时的逻辑错误或者 IO 错误导致的异常，例如数组越界或者试图打开一个不存在的文件等，这类异常需要在程序中捕获处理。
 
 用户无法直接继承 Error 和它的子类，只能继承 Exception 和它的子类，
@@ -91,7 +91,7 @@ main(): Int64 {
 }
 ```
 
-- 方法一中是 捕获 OverflowException 类型以及其子类的异常
+- 方法一中是捕获 OverflowException 类型以及其子类的异常
 
 - 通过 ｜ 符号，表示或的意思，表示适配两种异常类以及他们的子类型
 
@@ -131,11 +131,11 @@ main() {
     
 ```
 
-## Option类型用在错误处理上
+## Option 类型用在错误处理上
 
-Option类型是一个num类型
+Option 类型是一个 num 类型
 
-Option类型值得是 可选类型 ，就是这样的 `func getString(p: ?Int64): String{` p 就是
+Option 类型值得是可选类型，就是这样的 `func getString(p: ?Int64): String{` p 就是
 
 如果函数 getOrThrow 的参数值等于 Some(v) 则将 v 的值返回，如果参数值等于 None 则抛出异常
 
@@ -172,7 +172,7 @@ main() {
 ### getOrThrow 函数
 
 
-对于 ?T 类型的表达式 e，可以通过调用 getOrThrow 函数实现解构。当 e 的值等于 Some(v) 时，getOrThrow() 返回 v 的值，否则抛出异常。举例如下：
+对于？T 类型的表达式 e，可以通过调用 getOrThrow 函数实现解构。当 e 的值等于 Some(v) 时，getOrThrow() 返回 v 的值，否则抛出异常。举例如下：
 ```cj
 main() {
     let a = Some(1)
@@ -186,8 +186,8 @@ main() {
     }
 }
 ```
-### coalescing 操作符(??)
-coalescing 操作符（??）：对于 ?T 类型的表达式 e1，如果希望 e1 的值等于 None 时同样返回一个 T 类型的值 e2，可以使用 ?? 操作符。对于表达式 e1 ?? e2，当 e1 的值等于 Some(v) 时返回 v 的值，否则返回 e2 的值。
+### coalescing 操作符 (??)
+coalescing 操作符 (??)：对于？T 类型的表达式 e1，如果希望 e1 的值等于 None 时同样返回一个 T 类型的值 e2，可以使用 ?? 操作符。对于表达式 e1 ?? e2，当 e1 的值等于 Some(v) 时返回 v 的值，否则返回 e2 的值。
 
 
 ```cj
@@ -200,10 +200,10 @@ main() {
     println(r2)
 }
 ```
-### 问号操作符(?)
+### 问号操作符 (？)
 
 
-对于 ?T1 类型的表达式 e，当 e 的值等于 Some(v) 时，e?.b 的值等于 Option<T2>.Some(v.b)，否则 e?.b 的值等于 Option<T2>.None，其中 T2 是 v.b 的类型
+对于？T1 类型的表达式 e，当 e 的值等于 Some(v) 时，e?.b 的值等于 Option<T2>。Some(v.b)，否则 e?.b 的值等于 Option<T2>。None，其中 T2 是 v.b 的类型
 
 
 ```cj

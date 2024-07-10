@@ -27,12 +27,12 @@ for(v in a){
 Array 是引用类型，因此 Array 在作为表达式使用时不会拷贝副本，同一个 Array 实例的所有引用都会共享同样的数据。
 
 ### 数组切片
-let arr1 = [0, 1, 2, 3, 4, 5, 6]
+let arr1 = [0，1，2，3，4，5，6]
 let arr2 = arr1[..3]
 ## ArrayList
-跟go语言一样的切片就是 arrayList，所以在仓颉中没有go中值类型数组这个概念，都是切片，一般的array是引用类型，但是不能扩容的切片，arrayList是拥有扩容能力的切片
+跟 go 语言一样的切片就是 arrayList，所以在仓颉中没有 go 中值类型数组这个概念，都是切片，一般的 array 是引用类型，但是不能扩容的切片，arrayList 是拥有扩容能力的切片
 
-ArrayList不是默认类型，所以要使用导入标准库的方式去导入
+ArrayList 不是默认类型，所以要使用导入标准库的方式去导入
 ```cj
 from std import collection.*
 
@@ -64,7 +64,7 @@ while (let Some(i) <- it.next()) {
 
 ```
 ## hashset
-我们可以使用 HashSet 类型来构造只拥有不重复元素的 Collection。  其实它就是等于只取 hashmap的key来用而已
+我们可以使用 HashSet 类型来构造只拥有不重复元素的 Collection。其实它就是等于只取 hashmap 的 key 来用而已
 ```cangjie
 form std import collection.*
 
