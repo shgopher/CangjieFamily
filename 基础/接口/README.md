@@ -21,7 +21,7 @@ interface I {
     func f(): Unit
 }
 ```
-interface 默认具有 open 语义,因为默认interface 默认可以被实现
+interface 默认具有 open 语义，因为默认 interface 默认可以被实现
 
 
 继承这个接口
@@ -58,15 +58,15 @@ interface Calculable <: Addable & Subtractable {
 
 ```
 
-## any类型
+## any 类型
 
-这个跟go一样
+这个跟 go 一样
 
-interface any {}  就等于 go中的 `type any = interface{}` ，any是空接口的别名
+interface any {} 就等于 go 中的 `type any = interface{}`，any 是空接口的别名
 
 ## 类型别名
 
-跟go的一样 type aaa = Int64 ，不过看来cj中没有以xx为底的新类型这种方案
+跟 go 的一样 type aaa = Int64，不过看来 cj 中没有以 xx 为底的新类型这种方案
 
 
 

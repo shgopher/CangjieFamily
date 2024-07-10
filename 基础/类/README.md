@@ -32,7 +32,7 @@ class Rectangle {
 
 ## class 总结器
 
-因为class是引用类型，所以要想主动垃圾回收可以使用这个
+因为 class 是引用类型，所以要想主动垃圾回收可以使用这个
 
 ```cj
 Class C{
@@ -105,7 +105,7 @@ class Rectangle {
 
 ## class 成员的可见修饰符
 
-可以使用的可见性修饰符有三种：public、protected 和 private，**缺省的含义是仅包内可见 意思就是 protected**
+可以使用的可见性修饰符有三种：public、protected 和 private，**缺省的含义是仅包内可见意思就是 protected**
 
 - 使用 public 修饰的成员在 class 定义内部和外部均可见，成员变量、成员属性和成员函数在 class 外部可以通过对象访问；
 - 使用 protected 修饰的成员在本包、本 class 及其子类中可见，外部无法访问；
@@ -130,7 +130,7 @@ class C <: B { // Error: 'B' is not inheritable
 
 ```
 
-class 仅支持单继承(不过如果是接口的话，倒是可以同时实现多个接口)
+class 仅支持单继承 (不过如果是接口的话，倒是可以同时实现多个接口)
 
 sealed 修饰符只能修饰抽象类，表示被修饰的 class 定义只能在本定义所在的包内被其他 class 继承。sealed 已经蕴含了 public/open 的语义，因此定义 sealed abstract class 时若提供 public/open 修饰符，编译器将会告警
 

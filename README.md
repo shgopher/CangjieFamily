@@ -2,7 +2,7 @@
  * @Author: shgopher shgopher@gmail.com
  * @Date: 2024-06-22 13:20:08
  * @LastEditors: shgopher shgopher@gmail.com
- * @LastEditTime: 2024-07-04 13:04:18
+ * @LastEditTime: 2024-07-11 00:42:32
  * @FilePath: /CangjieFamily/README.md
  * @Description: 
  * 
@@ -44,7 +44,6 @@ hey~，我是科科人神，目前就职于国内一家互联网公司，你们�
 - [泛型](./基础/泛型/README.md)
 - [扩展](./基础/扩展/README.md)
 - [包](./基础/包/README.md)
-- [cjpm](./基础/cjpm/README.md) 
 - [错误处理](./基础/错误处理/README.md)
 - [宏](./基础/宏/README.md)
 - [重载](./基础/重载/README.md)
